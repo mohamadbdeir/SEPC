@@ -106,5 +106,54 @@ body {
 
 .content-container {
     min-height: 100vh;
+    }
+
+.parallax {
+    /* The image used */
+    background-image: url("assets/hadrware.jpg ");
+  
+    /* Set a specific height */
+    
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:100vw;
+    margin:0;
+    padding:0;
+    color:white;
+
+  }
+
+  .mission-text {
+    color:white;
+    text-align: center;
     padding: 2rem;
-}
+    border-radius: 10px;
+    text-align: justify;
+    color:#322d29;
+    font-weight: 400;
+    
+    
+  }
+
+  .quality-img {
+    width:20vw
+  }
+
+  .quality-img-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+
+  }
+
+    .imbatable {
+        color:#72383d;
+        font-size: 2rem;
+        font-weight: 400;
+    }
