@@ -54,3 +54,20 @@ window.addEventListener('resize', () => {
         initParallax();
     }, 250);
 });
+
+// Trigger "peintures-titre" animation when it enters viewport
+document.addEventListener('DOMContentLoaded', function () {
+    const title = document.querySelector('.peintures-titre');
+    if (!title) return;
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                title.classList.add('is-visible');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.3 });
+
+    observer.observe(title);
+});
