@@ -127,6 +127,7 @@ body {
 
   }
 
+  
   .marketing-text {
     color:white;
     text-align: center;
@@ -161,14 +162,8 @@ body {
     
 
 
-    .peintures{
-       
-    }
-
-
    
-      .peintures-titre {
-        font-family: 'Gochi Hand', cursive;
+      .product-titre {
         position: relative;
       }
       
@@ -177,7 +172,7 @@ body {
         position: absolute;
         display: block;
         margin-top: -10px;
-        left: 0px;
+        left: -20px;
         
         mask:url(data:image/png;base64,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) no-repeat 0 0;
       }
@@ -211,11 +206,15 @@ body {
         animation:         brush 1s 0s  backwards reverse;  
       }
 
-      .peintures-titre-container{
+      .product-titre-container{
         display:flex;
-        width:100wv;
+        
         justify-content: center;
-        margin-top: 2em;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 1em;
+        border:1px solid #efe9e1;
+        margin: 10vw;
       }
 
       .discover-button
@@ -231,3 +230,76 @@ body {
         display:flex;
         justify-content: center;
       }
+
+      .product-image
+      {
+        max-height: 20vh;
+      }
+
+      .saw-container {
+        width: 100%;
+        max-width: 500px;
+        position: relative;
+        overflow: visible;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .saw-image {
+        width: 250px;
+        height: auto;
+        position: absolute;
+        opacity: 1;
+        transform-origin: center;
+        z-index: 1;
+      }
+
+      .saw-image.is-visible {
+        animation: sawMotion 2s ease-in-out 1 forwards;
+      }
+
+      .saw-title {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+        color: #72383d;
+        /* text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8), -1px -1px 2px rgba(255, 255, 255, 0.8);
+        font-weight: bold; */
+        white-space: nowrap;
+        pointer-events: none;
+      }
+
+      @keyframes sawAppear {
+        0% {
+          opacity: 0;
+          transform: translateY(20px) scale(0.8);
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(0) scale(1);
+        }
+      }
+
+      @keyframes sawMotion {
+        0% {
+          transform: translateX(0) rotate(0deg);
+        }
+        30% {
+          transform: translateX(40px) rotate(1deg);
+        }
+        60% {
+          transform: translateX(0) rotate(0deg);
+        }
+        80% {
+          transform: translateX(-25px) rotate(-1deg);
+        }
+        100% {
+          transform: translateX(0) rotate(0deg);
+        }
+      }
+
+      

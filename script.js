@@ -71,3 +71,20 @@ document.addEventListener('DOMContentLoaded', function () {
 
     observer.observe(title);
 });
+
+// Trigger saw animation when it enters viewport
+document.addEventListener('DOMContentLoaded', function () {
+    const sawImage = document.querySelector('.saw-image');
+    if (!sawImage) return;
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                sawImage.classList.add('is-visible');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.3 });
+
+    observer.observe(sawImage);
+});
