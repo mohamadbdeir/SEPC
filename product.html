@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SEPC | Produits</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body class="bg-[#293646] text-white font-['Manrope'] antialiased">
+    <main>
+      <!-- Header -->
+      <header class="w-full px-6 py-6 md:px-12 bg-[#293646]/95 backdrop-blur-sm sticky top-0 z-50 border-b border-white/10">
+        <div class="max-w-7xl mx-auto flex items-center justify-between">
+          <a href="./index.html" class="text-xl font-bold tracking-wide text-[#e79c1d] hover:text-[#e79c1d]/80 transition">
+            SEPC
+          </a>
+          <a
+            href="./index.html"
+            class="inline-flex items-center gap-2 px-5 py-2 rounded-full text-sm font-semibold border border-white/30 text-white hover:bg-white/10 transition"
+          >
+            ← Retour
+          </a>
+        </div>
+      </header>
+
+      <!-- Products Section -->
+      <section class="py-12 md:py-16 px-6 md:px-12">
+        <div class="max-w-7xl mx-auto">
+          <h1 id="brand-title" class="text-3xl md:text-4xl font-bold mb-4 text-white text-center">
+            Chargement...
+          </h1>
+          <p class="text-center text-white/70 mb-8 text-base md:text-lg">
+            Nos produits
+          </p>
+
+          <!-- Loading State -->
+          <div id="loading" class="text-center py-12">
+            <div class="inline-block animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-[#e79c1d]"></div>
+            <p class="mt-4 text-white/70">Chargement des produits...</p>
+          </div>
+
+          <!-- Products Grid -->
+          <div
+            id="products-grid"
+            class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4 md:gap-6 hidden"
+          >
+            <!-- Products will be dynamically inserted here -->
+          </div>
+
+          <!-- Empty State -->
+          <div id="empty-state" class="text-center py-12 hidden">
+            <p class="text-white/70 text-lg">Aucun produit trouvé pour cette marque.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="./product.js" defer></script>
+  </body>
+</html>
+
