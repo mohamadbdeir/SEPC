@@ -10,7 +10,8 @@ const brandMapping = {
   'megalec': 'MEGALEC',
   'midea': 'MIDEA',
   'schneider': 'SCHNEIDER',
-  'somafix': 'SOMAFIX',
+  'divers': 'DIVERS',
+  'sanitaires': 'SANITAIRES',
   'soma-kimya': 'SOMA KIMYA'
 };
 
@@ -26,7 +27,8 @@ const brandDisplayNames = {
   'megalec': 'Megalec',
   'midea': 'Midea',
   'schneider': 'Schneider',
-  'somafix': 'Soma Fix',
+  'divers': 'DIVERS',
+  'sanitaires': 'SANITAIRES',
   'soma-kimya': 'Soma Kimya'
 };
 
